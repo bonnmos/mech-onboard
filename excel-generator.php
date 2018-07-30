@@ -88,7 +88,7 @@ try {
   // Recipient(s)
   $mail->setFrom('info@directpay.online');
   // $mail->addAddress('bonnom@directpay.online');
-  // $mail->addAddress('dickson.chemjor@directpay.online');
+  $mail->addAddress('dickson.chemjor@directpay.online');
   
   // Attachments
   $mail->addAttachment('Merchants to Onboard.xlsx');
