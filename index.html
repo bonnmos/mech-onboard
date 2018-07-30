@@ -1,19 +1,29 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MerchantOnboarding</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <title>Merchant Onboarding</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+    <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+
 </head>
+
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="inline.bundle.js"></script>
-<script type="text/javascript" src="polyfills.bundle.js"></script>
-<script type="text/javascript" src="styles.bundle.js"></script>
-<script type="text/javascript" src="vendor.bundle.js"></script>
-<script type="text/javascript" src="main.bundle.js"></script>
-</body>
+    <!-- Show simple splash screen-->
+    <multi-step-wizard-app>
+        <div class="splash">
+            <div class="color-line"></div>
+            <div class="splash-title">
+                <h1>Merchant Onboarding</h1>
+                <img src="assets/images/loading-bars.svg" width="64" height="64" />
+            </div>
+        </div>
+    </multi-step-wizard-app>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+
 </html>
