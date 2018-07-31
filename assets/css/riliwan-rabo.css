@@ -4,7 +4,8 @@
     width: 75%;
     margin: 60px auto;
     margin-top: 30px !important;
-    height: 1500px;
+    height: 100%;
+    overflow: auto;
     background: #fff;
     /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
 }

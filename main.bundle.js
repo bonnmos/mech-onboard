@@ -59,7 +59,7 @@ var AppRoutingModule = (function () {
     return AppRoutingModule;
 }());
 AppRoutingModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(appRoutes)],
         exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]],
         providers: [__WEBPACK_IMPORTED_MODULE_6__workflow_workflow_guard_service__["a" /* WorkflowGuard */]]
@@ -107,11 +107,11 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", Object)
 ], AppComponent.prototype, "formData", void 0);
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'multi-step-wizard-app',
         template: __webpack_require__("../../../../../src/app/app.component.html")
     }),
@@ -130,17 +130,21 @@ var _a;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__company_details_company_details_component__ = __webpack_require__("../../../../../src/app/company-details/company-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__other_info_other_info_component__ = __webpack_require__("../../../../../src/app/other-info/other-info.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__main_contact_main_contact_component__ = __webpack_require__("../../../../../src/app/main-contact/main-contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__result_result_component__ = __webpack_require__("../../../../../src/app/result/result.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__data_formData_service__ = __webpack_require__("../../../../../src/app/data/formData.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__workflow_workflow_service__ = __webpack_require__("../../../../../src/app/workflow/workflow.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__company_details_company_details_component__ = __webpack_require__("../../../../../src/app/company-details/company-details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__other_info_other_info_component__ = __webpack_require__("../../../../../src/app/other-info/other-info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__main_contact_main_contact_component__ = __webpack_require__("../../../../../src/app/main-contact/main-contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__result_result_component__ = __webpack_require__("../../../../../src/app/result/result.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ngx_spinner__ = __webpack_require__("../../../../ngx-spinner/ngx-spinner.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ngx_spinner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_ngx_spinner__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ngx_toastr__ = __webpack_require__("../../../../ngx-toastr/toastr.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__data_formData_service__ = __webpack_require__("../../../../../src/app/data/formData.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__workflow_workflow_service__ = __webpack_require__("../../../../../src/app/workflow/workflow.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -150,12 +154,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 /* App Root */
 
 
 /* Feature Components */
 
 
+
+
+// import your Spinner module
 
 
 /* Routing Module */
@@ -170,25 +178,28 @@ var AppModule = (function () {
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         imports: [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_12__angular_http__["b" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_9__app_routing_module__["a" /* AppRoutingModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_15__angular_http__["b" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_12__app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_10_ngx_spinner__["NgxSpinnerModule"],
+            __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_11_ngx_toastr__["a" /* ToastrModule */].forRoot()
         ],
         providers: [
-            { provide: __WEBPACK_IMPORTED_MODULE_10__data_formData_service__["a" /* FormDataService */], useClass: __WEBPACK_IMPORTED_MODULE_10__data_formData_service__["a" /* FormDataService */] },
-            { provide: __WEBPACK_IMPORTED_MODULE_11__workflow_workflow_service__["a" /* WorkflowService */], useClass: __WEBPACK_IMPORTED_MODULE_11__workflow_workflow_service__["a" /* WorkflowService */] }
+            { provide: __WEBPACK_IMPORTED_MODULE_13__data_formData_service__["a" /* FormDataService */], useClass: __WEBPACK_IMPORTED_MODULE_13__data_formData_service__["a" /* FormDataService */] },
+            { provide: __WEBPACK_IMPORTED_MODULE_14__workflow_workflow_service__["a" /* WorkflowService */], useClass: __WEBPACK_IMPORTED_MODULE_14__workflow_workflow_service__["a" /* WorkflowService */] }
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_4__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__company_details_company_details_component__["a" /* CopmanyDetailsComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__main_contact_main_contact_component__["a" /* MainContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__other_info_other_info_component__["a" /* OtherInfoComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__result_result_component__["a" /* ResultComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__company_details_company_details_component__["a" /* CopmanyDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__main_contact_main_contact_component__["a" /* MainContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__other_info_other_info_component__["a" /* OtherInfoComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__result_result_component__["a" /* ResultComponent */]
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -199,7 +210,7 @@ AppModule = __decorate([
 /***/ "../../../../../src/app/company-details/company-details.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form #companyDetailsForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"tab-pane fade in active\">\n        <h4 class=\"head text-center\">{{title}}</h4>\n        <br/>\n            <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>\n                <div class=\"form-group\">\n                    <label for=\"sel1\">Select Account Type</label>\n                    <select class=\"form-control\" id=\"sel1\">\n                        <option>Standard</option>\n                        <option>Strategic</option>\n                        <option>DPO In-House</option>\n                        <option>Sub Account</option>\n                    </select>\n                </div>\n                <div class=\"row\">\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"companyName\">Company Name</label>  \n                            <input class=\"form-control input-md\" #companyName=\"ngModel\" required id=\"companyName\" name=\"companyName\" type=\"text\" placeholder=\"Company Name\" [(ngModel)]=\"companyDetails.companyName\">   \n                            <div class=\"alert alert-danger\" [hidden]=\"companyName.valid\">Company Name is required</div>\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"tradeName\">Trade Name</label>  \n                            <input class=\"form-control input-md\" #tradeName=\"ngModel\" required id=\"tradeName\" name=\"tradeName\" type=\"text\" placeholder=\"Trade Name\" [(ngModel)]=\"companyDetails.tradeName\">\n                            <div class=\"alert alert-danger\" [hidden]=\"tradeName.valid\">Trade Name is required</div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"email\">Company Email</label>\n                    <input class=\"form-control input-md\" #companyEmail=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"companyEmail\" name=\"companyEmail\" type=\"text\" placeholder=\"Company Email\" [(ngModel)]=\"companyDetails.companyEmail\">\n                    <div class=\"alert alert-danger\" [hidden]=\"companyEmail.valid\">Email is required and must be valid</div>\n                </div>\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"websiteUrl\">Website (URL)</label>  \n                        <input class=\"form-control input-md\" #websiteUrl=\"ngModel\" required id=\"websiteUrl\" name=\"websiteUrl\" type=\"text\" placeholder=\"Website (URL)\" [(ngModel)]=\"companyDetails.websiteUrl\">\n                        <div class=\"alert alert-danger\" [hidden]=\"websiteUrl.valid\">Website URL is required</div>\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"phoneNumber\">Phone Number</label>  \n                        <input class=\"form-control input-md\" #phoneNumber=\"ngModel\" required id=\"phoneNumber\" name=\"phoneNumber\" type=\"text\" placeholder=\"phoneNumber\" [(ngModel)]=\"companyDetails.phoneNumber\">\n                        <div class=\"alert alert-danger\" [hidden]=\"phoneNumber.valid\">Phone Number is required</div>\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"address1\">Address1</label>  \n                        <input class=\"form-control input-md\" #address1=\"ngModel\" required id=\"address1\" name=\"address1\" type=\"text\" placeholder=\"Address1\" [(ngModel)]=\"companyDetails.address1\">\n                        <div class=\"alert alert-danger\" [hidden]=\"address1.valid\">Address 1 is required</div>\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"address1\">Address2</label>  \n                        <input class=\"form-control input-md\" #address2=\"ngModel\" id=\"address2\" name=\"address2\" type=\"text\" placeholder=\"Address2\" [(ngModel)]=\"companyDetails.address2\">\n                    </div>\n                <!--/div-->\n                <div class=\"row\">\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"city\">City</label>  \n                            <input class=\"form-control input-md\" #city=\"ngModel\" required id=\"city\" name=\"city\" type=\"text\" placeholder=\"City\" [(ngModel)]=\"companyDetails.city\">\n                            <div class=\"alert alert-danger\" [hidden]=\"city.valid\">City is required</div>\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"tradeName\">State</label>  \n                            <input class=\"form-control input-md\" #state=\"ngModel\" id=\"state\" name=\"state\" type=\"text\" placeholder=\"State\" [(ngModel)]=\"companyDetails.state\">\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"zip\">Zip</label>  \n                            <input class=\"form-control input-md\" #zip=\"ngModel\" id=\"zip\" name=\"zip\" type=\"text\" placeholder=\"Postal / Zip Code\" [(ngModel)]=\"companyDetails.zip\">\n                        </div>\n                    </div>\n                </div>\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <!--div class=\"form-group\">\n                        <label for=\"country\" class=\"col-sm-2 control-label\">Country</label>\n                        <div class=\"col-sm-2\">\n                            <input type=\"text\" list=\"countrylist\" class=\"form-control\" ng-model=\"userDoc.country\">\n                            <ngcountries></ngcountries>\n                        </div>\n                    </div-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"tradeName\">Country</label>  \n                        <input class=\"form-control input-md\" #country=\"ngModel\" required id=\"country\" name=\"country\" type=\"text\" placeholder=\"Country\" [(ngModel)]=\"companyDetails.country\">\n                        <div class=\"alert alert-danger\" [hidden]=\"country.valid\">Country is required</div>\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"zip\">Other Info</label>  \n                        <textarea class=\"form-control input-md\" #otherInfo=\"ngModel\" id=\"otherInfo\" name=\"otherInfo\" type=\"text\" placeholder=\"Other information shared...\" [(ngModel)]=\"companyDetails.otherInfo\"></textarea>\n                    </div>\n                <!--/div-->\n                    \n                <div class=\"form-group text-center\">\n                    <button class=\"btn btn-success btn-outline-rounded btn-info\" [disabled]=\"!companyDetailsForm.valid\" (click)=\"goToNext(companyDetailsForm)\"> Next <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n                </div>\n            </div>\n    </div>\n</form>"
+module.exports = "<form #companyDetailsForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"tab-pane fade in active\">\n        <h4 class=\"head text-center\">{{title}}</h4>\n        <br/>\n            <div class='col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8'>\n                <div class=\"form-group\">\n                    <label for=\"sel1\">Select Account Type</label>\n                    <select class=\"form-control\" id=\"sel1\" required name=\"accountType\" [(ngModel)]=\"companyDetails.accountType\">\n                        <option>Standard</option>\n                        <option>Strategic</option>\n                        <option>DPO In-House</option>\n                        <option>Sub Account</option>\n                    </select>\n                </div>\n                <div class=\"row\">\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"companyName\">Company Name</label>  \n                            <input class=\"form-control input-md\" #companyName=\"ngModel\" required id=\"companyName\" name=\"companyName\" type=\"text\" placeholder=\"Company Name\" [(ngModel)]=\"companyDetails.companyName\">   \n                            <!--div class=\"alert alert-danger\" [hidden]=\"companyName.valid\">Company Name is required</div-->\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"tradeName\">Trade Name</label>  \n                            <input class=\"form-control input-md\" #tradeName=\"ngModel\" required id=\"tradeName\" name=\"tradeName\" type=\"text\" placeholder=\"Trade Name\" [(ngModel)]=\"companyDetails.tradeName\">\n                            <!--div class=\"alert alert-danger\" [hidden]=\"tradeName.valid\">Trade Name is required</div-->\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"tradeName\">Registration #</label>  \n                            <input class=\"form-control input-md\" #registrationNumber=\"ngModel\" required id=\"registrationNumber\" name=\"registrationNumber\" type=\"text\" placeholder=\"Trade Name\" [(ngModel)]=\"companyDetails.registrationNumber\">\n                            <!--div class=\"alert alert-danger\" [hidden]=\"tradeName.valid\">Registration # is required</div-->\n                        </div>\n                    </div>\n                </div>\n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"email\">Company Email</label>\n                    <input class=\"form-control input-md\" #companyEmail=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"companyEmail\" name=\"companyEmail\" type=\"text\" placeholder=\"Company Email\" [(ngModel)]=\"companyDetails.companyEmail\">\n                    <!--div class=\"alert alert-danger\" [hidden]=\"companyEmail.valid\">Email is required and must be valid</div-->\n                </div>\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"websiteUrl\">Website (URL)</label>  \n                        <input class=\"form-control input-md\" #websiteUrl=\"ngModel\" required id=\"websiteUrl\" name=\"websiteUrl\" type=\"text\" placeholder=\"Website (URL)\" [(ngModel)]=\"companyDetails.websiteUrl\">\n                        <!--div class=\"alert alert-danger\" [hidden]=\"websiteUrl.valid\">Website URL is required</div-->\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"phoneNumber\">Phone Number</label>  \n                        <input class=\"form-control input-md\" #phoneNumber=\"ngModel\" required id=\"phoneNumber\" name=\"phoneNumber\" type=\"text\" placeholder=\"phoneNumber\" [(ngModel)]=\"companyDetails.phoneNumber\">\n                        <!--div class=\"alert alert-danger\" [hidden]=\"phoneNumber.valid\">Phone Number is required</div-->\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"address1\">Address1</label>  \n                        <input class=\"form-control input-md\" #address1=\"ngModel\" required id=\"address1\" name=\"address1\" type=\"text\" placeholder=\"Address1\" [(ngModel)]=\"companyDetails.address1\">\n                        <!--div class=\"alert alert-danger\" [hidden]=\"address1.valid\">Address 1 is required</div-->\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"address1\">Address2</label>  \n                        <input class=\"form-control input-md\" #address2=\"ngModel\" id=\"address2\" name=\"address2\" type=\"text\" placeholder=\"Address2\" [(ngModel)]=\"companyDetails.address2\">\n                    </div>\n                <!--/div-->\n                <div class=\"row\">\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"city\">City</label>  \n                            <input class=\"form-control input-md\" #city=\"ngModel\" required id=\"city\" name=\"city\" type=\"text\" placeholder=\"City\" [(ngModel)]=\"companyDetails.city\">\n                            <!--div class=\"alert alert-danger\" [hidden]=\"city.valid\">City is required</div-->\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"tradeName\">State</label>  \n                            <input class=\"form-control input-md\" #state=\"ngModel\" id=\"state\" name=\"state\" type=\"text\" placeholder=\"State\" [(ngModel)]=\"companyDetails.state\">\n                        </div>\n                    </div>\n                    <div class='col-xs-12 col-sm-6'>\n                        <div class=\"form-group\">\n                            <label class=\"control-label\" for=\"zip\">Zip</label>  \n                            <input class=\"form-control input-md\" #zip=\"ngModel\" id=\"zip\" name=\"zip\" type=\"text\" placeholder=\"Postal / Zip Code\" [(ngModel)]=\"companyDetails.zip\">\n                        </div>\n                    </div>\n                </div>\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <!--div class=\"form-group\">\n                        <label for=\"country\" class=\"col-sm-2 control-label\">Country</label>\n                        <div class=\"col-sm-2\">\n                            <input type=\"text\" list=\"countrylist\" class=\"form-control\" ng-model=\"userDoc.country\">\n                            <ngcountries></ngcountries>\n                        </div>\n                    </div-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"tradeName\">Country</label>  \n                        <input class=\"form-control input-md\" #country=\"ngModel\" required id=\"country\" name=\"country\" type=\"text\" placeholder=\"Country\" [(ngModel)]=\"companyDetails.country\">\n                        <!--div class=\"alert alert-danger\" [hidden]=\"country.valid\">Country is required</div-->\n                    </div>\n                <!--/div-->\n                <!--div class='col-xs-12 col-sm-6'-->\n                    <div class=\"form-group\">\n                        <label class=\"control-label\" for=\"zip\">Other Info</label>  \n                        <textarea class=\"form-control input-md\" #otherInfo=\"ngModel\" id=\"otherInfo\" name=\"otherInfo\" type=\"text\" placeholder=\"Other information shared...\" [(ngModel)]=\"companyDetails.otherInfo\"></textarea>\n                    </div>\n                <!--/div-->\n                    \n                <div class=\"form-group text-center\">\n                    <button class=\"btn btn-success btn-outline-rounded btn-info\" [disabled]=\"!companyDetailsForm.valid\" (click)=\"goToNext(companyDetailsForm)\"> Next <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n                </div>\n            </div>\n    </div>\n</form>"
 
 /***/ }),
 
@@ -234,6 +245,7 @@ var CopmanyDetailsComponent = (function () {
         console.log('Personal feature loaded!');
     };
     CopmanyDetailsComponent.prototype.save = function (form) {
+        console.log('company details', form.value);
         if (!form.valid) {
             return false;
         }
@@ -249,7 +261,7 @@ var CopmanyDetailsComponent = (function () {
     return CopmanyDetailsComponent;
 }());
 CopmanyDetailsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'mt-wizard-personal',
         template: __webpack_require__("../../../../../src/app/company-details/company-details.component.html")
     }),
@@ -292,7 +304,8 @@ var MyFormData = (function () {
         this.mainContactMobile = '';
         this.websiteIntegration = false;
         this.cmsPlugin = '';
-        this.uploadedCertificate = false;
+        this.uploadedCertificateType = '';
+        this.uploadedFile = null;
     }
     MyFormData.prototype.clear = function () {
         this.accountType = '';
@@ -313,9 +326,11 @@ var MyFormData = (function () {
         this.mainContactPosition = '';
         this.mainContactEmail = '';
         this.mainContactPosition = '';
+        this.mainContactMobile = '';
         this.websiteIntegration = false;
         this.cmsPlugin = '';
-        this.uploadedCertificate = false;
+        this.uploadedCertificateType = '';
+        this.uploadedFile = null;
     };
     return MyFormData;
 }());
@@ -355,7 +370,8 @@ var OtherInfo = (function () {
     function OtherInfo() {
         this.websiteIntegration = false;
         this.cmsPlugin = '';
-        this.uploadedCertificate = false;
+        this.uploadedCertificateType = '';
+        this.uploadedFile = null;
     }
     return OtherInfo;
 }());
@@ -417,6 +433,7 @@ var FormDataService = (function () {
     FormDataService.prototype.setCompanyDetails = function (data) {
         // Update the Personal data only when the Personal Form had been validated successfully
         this.isCompanyDetailsFormValid = true;
+        this.formData.accountType = data.accountType;
         this.formData.companyName = data.companyName;
         this.formData.tradeName = data.tradeName;
         this.formData.registrationNumber = data.registrationNumber;
@@ -459,7 +476,8 @@ var FormDataService = (function () {
         var otherInfo = {
             websiteIntegration: this.formData.websiteIntegration,
             cmsPlugin: this.formData.cmsPlugin,
-            uploadedCertificate: this.formData.uploadedCertificate
+            uploadedCertificateType: this.formData.uploadedCertificateType,
+            uploadedFile: this.formData.uploadedFile
         };
         return otherInfo;
     };
@@ -468,7 +486,8 @@ var FormDataService = (function () {
         this.isOtherInfoFormValid = true;
         this.formData.websiteIntegration = data.websiteIntegration;
         this.formData.cmsPlugin = data.cmsPlugin;
-        this.formData.uploadedCertificate = data.uploadedCertificate;
+        this.formData.uploadedCertificateType = data.uploadedCertificateType;
+        this.formData.uploadedFile = data.uploadedFile;
         // Validate Address Step in Workflow
         this.workflowService.validateStep(__WEBPACK_IMPORTED_MODULE_3__workflow_workflow_model__["a" /* STEPS */].otherInfo);
     };
@@ -493,7 +512,7 @@ var FormDataService = (function () {
     return FormDataService;
 }());
 FormDataService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__workflow_workflow_service__["a" /* WorkflowService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__workflow_workflow_service__["a" /* WorkflowService */]) === "function" && _a || Object])
 ], FormDataService);
 
@@ -505,7 +524,7 @@ var _a;
 /***/ "../../../../../src/app/main-contact/main-contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form #mainContactForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"tab-pane fade in active\">\n        <h4 class=\"head text-center\">{{title}}</h4>\n        <br/>\n        <div class='row'>\n            <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>\n               \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"maincContactFirstName\">First Name</label>  \n                    <input class=\"form-control input-md\" #mainContactFirstName=\"ngModel\" required id=\"mainContactFirstName\" name=\"maincContactFirstName\" type=\"text\" placeholder=\"First Name\" [(ngModel)]=\"mainContact.mainContactFirstName\">\n                    <div class=\"alert alert-danger\" [hidden]=\"mainContactFirstName.valid\">First Name is required</div>\n                </div>   \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactLastName\">Last Name</label>  \n                    <input class=\"form-control input-md\" #mainContactLastName=\"ngModel\" required id=\"maincContactLastName\" name=\"maincContactLastName\" type=\"text\" placeholder=\"Last Name\" [(ngModel)]=\"mainContact.mainContactLastName\">\n                    <div class=\"alert alert-danger\" [hidden]=\"mainContactLastName.valid\">Last Name is required</div>\n                </div>  \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactPosition\">Position</label>  \n                    <input class=\"form-control input-md\" #mainContactPosition=\"ngModel\" id=\"mainContactPosition\" name=\"mainContactPosition\" type=\"text\" placeholder=\"Position\" [(ngModel)]=\"mainContact.mainContactPosition\">\n                </div> \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactEmail\">Email</label>\n                    <input class=\"form-control input-md\" #mainContactEmail=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"mainContactEmail\" name=\"mainContactEmail\" type=\"text\" placeholder=\"Email\" [(ngModel)]=\"mainContact.mainContactEmail\">\n                    <div class=\"alert alert-danger\" [hidden]=\"mainContactEmail.valid\">Email is required and must be valid</div>\n                </div>\n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactMobile\">Mobile</label>  \n                    <input class=\"form-control input-md\" #mainContactMobile=\"ngModel\" required id=\"mainContactMobile\" name=\"mainContactMobile\" type=\"text\" placeholder=\"Mobile #\" [(ngModel)]=\"mainContact.mainContactMobile\">\n                    <div class=\"alert alert-danger\" [hidden]=\"mainContactMobile.valid\">Mobile # is required</div>\n                </div>  \n            </div>\n            <div class=\"form-group text-center\">\n                <button class=\"btn btn-outline-rounded btn-default\" (click)=\"goToPrevious(mainContactForm)\"> <span style=\"margin-right:10px;\" class=\"glyphicon glyphicon-arrow-left\"></span> Previous</button>\n                <button class=\"btn btn-outline-rounded btn-info\" [disabled]=\"!mainContactForm.valid\" (click)=\"goToNext(mainContactForm)\"> Next <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n            </div>\n        </div>\n    \n    </div>\n</form>"
+module.exports = "<form #mainContactForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"tab-pane fade in active\">\n        <h4 class=\"head text-center\">{{title}}</h4>\n        <br/>\n        <div class='row'>\n            <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>\n               \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"maincContactFirstName\">First Name</label>  \n                    <input class=\"form-control input-md\" #mainContactFirstName=\"ngModel\" required id=\"mainContactFirstName\" name=\"maincContactFirstName\" type=\"text\" placeholder=\"First Name\" [(ngModel)]=\"mainContact.mainContactFirstName\">\n                    <!--div class=\"alert alert-danger\" [hidden]=\"mainContactFirstName.valid\">First Name is required</div-->\n                </div>   \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactLastName\">Last Name</label>  \n                    <input class=\"form-control input-md\" #mainContactLastName=\"ngModel\" required id=\"maincContactLastName\" name=\"maincContactLastName\" type=\"text\" placeholder=\"Last Name\" [(ngModel)]=\"mainContact.mainContactLastName\">\n                    <!--div class=\"alert alert-danger\" [hidden]=\"mainContactLastName.valid\">Last Name is required</div-->\n                </div>  \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactPosition\">Position</label>  \n                    <input class=\"form-control input-md\" #mainContactPosition=\"ngModel\" id=\"mainContactPosition\" name=\"mainContactPosition\" type=\"text\" placeholder=\"Position\" [(ngModel)]=\"mainContact.mainContactPosition\">\n                </div> \n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactEmail\">Email</label>\n                    <input class=\"form-control input-md\" #mainContactEmail=\"ngModel\" required pattern=\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$\" id=\"mainContactEmail\" name=\"mainContactEmail\" type=\"text\" placeholder=\"Email\" [(ngModel)]=\"mainContact.mainContactEmail\">\n                    <!--div class=\"alert alert-danger\" [hidden]=\"mainContactEmail.valid\">Email is required and must be valid</div-->\n                </div>\n                <div class=\"form-group\">\n                    <label class=\"control-label\" for=\"mainContactMobile\">Mobile</label>  \n                    <input class=\"form-control input-md\" #mainContactMobile=\"ngModel\" required id=\"mainContactMobile\" name=\"mainContactMobile\" type=\"text\" placeholder=\"Mobile #\" [(ngModel)]=\"mainContact.mainContactMobile\">\n                    <!--div class=\"alert alert-danger\" [hidden]=\"mainContactMobile.valid\">Mobile # is required</div-->\n                </div>  \n            </div>\n            <div class=\"form-group text-center\">\n                <button class=\"btn btn-outline-rounded btn-default\" (click)=\"goToPrevious(mainContactForm)\"> <span style=\"margin-right:10px;\" class=\"glyphicon glyphicon-arrow-left\"></span> Previous</button>\n                <button class=\"btn btn-outline-rounded btn-info\" [disabled]=\"!mainContactForm.valid\" (click)=\"goToNext(mainContactForm)\"> Next <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n            </div>\n        </div>\n    \n    </div>\n</form>"
 
 /***/ }),
 
@@ -540,6 +559,7 @@ var MainContactComponent = (function () {
         console.log('Main contact feature loaded!');
     };
     MainContactComponent.prototype.save = function (form) {
+        console.log('main contact', form.value);
         if (!form.valid) {
             return false;
         }
@@ -561,7 +581,7 @@ var MainContactComponent = (function () {
     return MainContactComponent;
 }());
 MainContactComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'mt-wizard-address',
         template: __webpack_require__("../../../../../src/app/main-contact/main-contact.component.html")
     }),
@@ -599,7 +619,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
 }());
 NavbarComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'msw-navbar',
         template: __webpack_require__("../../../../../src/app/navbar/navbar.component.html")
     })
@@ -617,6 +637,7 @@ NavbarComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_formData_service__ = __webpack_require__("../../../../../src/app/data/formData.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -629,19 +650,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var OtherInfoComponent = (function () {
     function OtherInfoComponent(router, formDataService) {
         this.router = router;
         this.formDataService = formDataService;
         this.title = 'Other Info';
         this.websiteIntegrationRequired = false;
-        this.pluginType = '';
+        this.certificateTypes = [
+            'COR',
+            'COI',
+            'T&C',
+            'ID'
+        ];
+        this.pluginTypes = [
+            'Woo-Commerce',
+            'Shopify',
+            'Magento'
+        ];
     }
     OtherInfoComponent.prototype.ngOnInit = function () {
         this.otherInfo = this.formDataService.getOtherInfo();
-        console.log('Work feature loaded!');
+        console.log('Other Info feature loaded!');
     };
     OtherInfoComponent.prototype.save = function (form) {
+        console.log('other info', form.value);
         if (!form.valid) {
             return false;
         }
@@ -650,31 +683,47 @@ var OtherInfoComponent = (function () {
     };
     OtherInfoComponent.prototype.goToPrevious = function (form) {
         if (this.save(form)) {
-            // Navigate to the personal page
+            // Navigate to the main contact page
             this.router.navigate(['/mainContact']);
         }
     };
     OtherInfoComponent.prototype.goToNext = function (form) {
+        /*if (this.files != null) {
+            console.log('file: ', this.files[0]);
+            form.form.get('file-upload').setValue(this.files[0]);
+        } else {
+            console.log('no files!!');
+        }*/
         if (this.save(form)) {
-            // Navigate to the address page
+            // Navigate to the result page
             this.router.navigate(['/result']);
         }
     };
     OtherInfoComponent.prototype.onWebIntegrationRequired = function ($event) {
-        console.log('website integration : ' + $event);
         this.websiteIntegrationRequired = $event;
+        console.log('websiteIntegrationRequired : ' + this.websiteIntegrationRequired);
+    };
+    OtherInfoComponent.prototype.setFileForUpload = function (files) {
+        console.log('files', files);
+        if (files.length > 0) {
+            this.files = files;
+        }
     };
     return OtherInfoComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('otherInfoForm'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+], OtherInfoComponent.prototype, "otherInfoForm", void 0);
 OtherInfoComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'mt-wizard-work',
         template: __webpack_require__("../../../../../src/app/other-info/other-info.html")
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */]) === "function" && _c || Object])
 ], OtherInfoComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=other-info.component.js.map
 
 /***/ }),
@@ -682,14 +731,14 @@ var _a, _b;
 /***/ "../../../../../src/app/other-info/other-info.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form #otherInfoForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"tab-pane fade in active\">\n        <div class=\"tab-pane fade in active\">\n            <h4 class=\"head text-center\">{{title}}</h4>\n            <br/>\n            <div class=\"row\">\n            <!--div class='row'-->\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>\n                    <div class=\"form-group\">\n                        <div class=\"checkbox\">\n                            <label style=\"padding-left: 0;\" class=\"control-label\" for=\"websiteIntegrationRequired\">\n                                Is Website Integration Required?\n                            </label>\n                            <input type=\"checkbox\" #websiteIntegrationRequired=\"ngModel\" \n                                id=\"websiteIntegrationRequired\"\n                                required \n                                name=\"websiteIntegrationRequired\" \n                                [ngModel]=\"websiteIntegrationRequired\" \n                                (ngModelChange)=\"onWebIntegrationRequired($event)\">\n                        </div>\n                    </div>\n                    <div class=\"form-group\" *ngIf=\"websiteIntegrationRequired === true\">\n                        <label for=\"sel1\">Select Account Type</label>\n                        <select class=\"form-control\" id=\"sel1\" [ngModel]=\"pluginType\">\n                            <option>Woo-Commerce</option>\n                            <option>Shopify</option>\n                            <option>Magento</option>\n                        </select>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"sel2\">Certificate Type</label>\n                        <select class=\"form-control\" id=\"sel2\">\n                            <option>COR</option>\n                            <option>COI</option>\n                            <option>T&amp;C</option>\n                            <option>ID</option>\n                        </select>\n                    </div>\n                    <div class=\"form-group\">\n                        <!-- upload file -->\n                        <label for=\"sel2\">Upload Certificate</label>\n                        <input type=\"file\" \n                            (change)=\"startUpload($event.target.files)\" \n                            class=\"file-input\"\n                            id=\"file-upload\">\n                    </div>\n                </div>\n            </div>\n            <!--/div-->\n            <div class=\"form-group text-center space-20\">\n                <button class=\"btn btn-outline-rounded btn-default\" (click)=\"goToPrevious(otherInfoForm)\"> <span style=\"margin-right:10px;\" class=\"glyphicon glyphicon-arrow-left\"></span> Previous</button>\n                <button class=\"btn btn-outline-rounded btn-info\" [disabled]=\"!otherInfoForm.valid\" (click)=\"goToNext(otherInfoForm)\"> Next <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n            </div>\n        </div>\n    </div>\n</form>"
+module.exports = "<form #otherInfoForm=\"ngForm\" class=\"editForm\" novalidate>\n    <div class=\"tab-pane fade in active\">\n        <div class=\"tab-pane fade in active\">\n            <h4 class=\"head text-center\">{{title}}</h4>\n            <br/>\n            <div class=\"row\">\n            <!--div class='row'-->\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10'>\n                    <div class=\"form-group\">\n                        <div class=\"checkbox\">\n                            <label style=\"padding-left: 0;\" class=\"control-label\" for=\"websiteIntegrationRequired\">\n                                Is Website Integration Required?\n                            </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n                            <input type=\"checkbox\"\n                                [(ngModel)]=\"otherInfo.websiteIntegration\"\n                                id=\"websiteIntegration\"\n                                required \n                                name=\"websiteIntegration\" \n                                [checked]=\"websiteIntegrationRequired\" \n                                (change)=\"websiteIntegrationRequired = !websiteIntegrationRequired\">\n                                    \n                        </div>\n                    </div>\n                    <div class=\"form-group\" *ngIf=\"websiteIntegrationRequired === true\">\n                        <label for=\"sel1\">Select Plugin Type</label>\n                        <select class=\"form-control\" id=\"sel1\" name=\"cmsPlugin\" [(ngModel)]=\"otherInfo.cmsPlugin\">\n                            <option *ngFor=\"let pluginType of pluginTypes\">{{pluginType}}</option>\n                        </select>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"sel2\">Select Certificate Type</label>\n                        <select class=\"form-control\" id=\"sel2\" name=\"uploadedCertificateType\" [(ngModel)]=\"otherInfo.uploadedCertificateType\">\n                            <option *ngFor=\"let certType of certificateTypes\">{{certType}}</option>\n                        </select>\n                    </div>\n                    <div class=\"form-group\">\n                        <!-- upload file -->\n                        <label for=\"sel2\">Upload Certificate</label>\n                        <input type=\"file\" \n                            name=\"uploadedFile\"\n                            (change)=\"setFileForUpload($event.target.files)\"\n                            class=\"file-input\"\n                            id=\"file-upload\">\n                    </div><!--(change)=\"startUpload($event)\"-->\n                </div>\n            </div>\n            <!--/div-->\n            <div class=\"form-group text-center space-20\">\n                <button class=\"btn btn-outline-rounded btn-default\" (click)=\"goToPrevious(otherInfoForm)\"> <span style=\"margin-right:10px;\" class=\"glyphicon glyphicon-arrow-left\"></span> Previous</button>\n                <button class=\"btn btn-outline-rounded btn-info\" [disabled]=\"!otherInfoForm.valid\" (click)=\"goToNext(otherInfoForm)\"> Next <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n            </div>\n        </div>\n    </div>\n</form>"
 
 /***/ }),
 
 /***/ "../../../../../src/app/result/result.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tab-pane fade in active\">\n    <h3 class=\"head text-center\">{{title}}</h3>\n    <p class=\"narrow text-center\">\n        Here is a copy of the information you have entered:\n    </p>\n    <div class='row'>\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <div class=\"panel-heading\">Company Details</div>\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Account Type: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.accountType}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Company Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.companyName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Trade Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.tradeName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Company Email: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.companyEmail}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Website (URL): </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.websiteUrl}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Company Email: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.companyEmail}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Phone Number: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.phoneNumber}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Address 1:</label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.address1}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Address 2:</label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.address2}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">City: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.city}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">State: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.state}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Country: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.country}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Postal / Zip Code: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.zip}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Other Info: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.otherInfo}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <div class=\"panel-heading\">Main Contact</div>\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">First Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactFirstName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Last Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactLastName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Position: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.position}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Email: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactEmail}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Mobile: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactMobile}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <div class=\"panel-heading\">Other Info</div>\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Website Integration?: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.websiteIntegration}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Plugin Type: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.cmsPlugin}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Certificate: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.uploadedCertificate}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    <div class=\"text-center\">\n        <button class=\"btn btn-success btn-outline-rounded\" [disabled]=\"!isFormValid\" (click)=\"submit()\"> Submit <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n    </div>\n</div>"
+module.exports = "<div class=\"tab-pane fade in active\">\n    <h3 class=\"head text-center\">{{title}}</h3>\n    <p class=\"narrow text-center\">\n        Here is a copy of the information you have entered:\n    </p>\n    <div class='row'>\n        <div class=\"panel-group\">\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <div class=\"panel-heading\">Company Details</div>\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Account Type: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.accountType}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Company Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.companyName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Trade Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.tradeName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Company Email: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.companyEmail}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Website (URL): </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.websiteUrl}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Company Email: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.companyEmail}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Phone Number: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.phoneNumber}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Address 1:</label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.address1}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Address 2:</label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.address2}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">City: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.city}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">State: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.state}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Country: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.country}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Postal / Zip Code: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.zip}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Other Info: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.otherInfo}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <div class=\"panel-heading\">Main Contact</div>\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">First Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactFirstName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Last Name: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactLastName}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Position: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.position}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Email: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactEmail}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Mobile: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.mainContactMobile}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"panel panel-default\">\n            <div class=\"panel-body\">\n                <div class=\"panel-heading\">Other Info</div>\n                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Website Integration?: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.websiteIntegration}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Plugin Type: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.cmsPlugin}}\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class='col-xs-3 col-sm-2'>\n                            <div class=\"form-group\">\n                                <label class=\"control-label\" for=\"name\">Certificate: </label> \n                            </div>\n                        </div>\n                        <div class='col-xs-9 col-sm-10'>\n                            {{myFormData.uploadedCertificate}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    <div class=\"text-center\">\n        <button class=\"btn btn-success btn-outline-rounded\" [disabled]=\"!isFormValid\" (click)=\"submit()\"> Submit <span style=\"margin-left:10px;\" class=\"glyphicon glyphicon-arrow-right\"></span></button>\n    </div>\n\n    <ngx-spinner\n        bdColor=\"rgba(51,51,51,0.8)\"\n        size=\"medium\"\n        color=\"rgb(87, 202, 79)\"\n        loadingText=\"\"\n        type=\"line-scale\">\n    </ngx-spinner>\n    </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -702,6 +751,10 @@ module.exports = "<div class=\"tab-pane fade in active\">\n    <h3 class=\"head 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_formData_model__ = __webpack_require__("../../../../../src/app/data/formData.model.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_formData_service__ = __webpack_require__("../../../../../src/app/data/formData.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_spinner__ = __webpack_require__("../../../../ngx-spinner/ngx-spinner.umd.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_spinner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_ngx_spinner__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_toastr__ = __webpack_require__("../../../../ngx-toastr/toastr.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -715,10 +768,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var ResultComponent = (function () {
-    function ResultComponent(formDataService, http) {
+    function ResultComponent(formDataService, http, spinner, router, toastr) {
         this.formDataService = formDataService;
         this.http = http;
+        this.spinner = spinner;
+        this.router = router;
+        this.toastr = toastr;
+        // The URLs
+        this.localHostUrl = 'http://localhost/onboarding-backend/dist/excel-generator.php';
+        this.herkuHostUrl = 'https://merchant-onboarding.herokuapp.com/excel-generator.php';
         this.title = 'Confirm Details';
         this.isFormValid = false;
     }
@@ -728,36 +790,61 @@ var ResultComponent = (function () {
         console.log('Result feature loaded!');
     };
     ResultComponent.prototype.submit = function () {
-        this.myFormData = this.formDataService.resetFormData();
+        var _this = this;
+        this.myFormData = this.formDataService.getFormData();
         this.isFormValid = false;
         console.log('form values', JSON.stringify(this.myFormData));
         var formData = new FormData();
         formData.append('company-details', JSON.stringify(this.myFormData));
-        // const stringFormData = JSON.stringify(this.merchantForm.value);
-        // const map = new Map<string, any>();
-        // map.set('company-details', stringFormData);
-        this.http.post('http://localhost/onboarding-backend/dist/excel-generator.php', formData)
+        this.formDataService.resetFormData();
+        this.spinner.show();
+        this.http.post(this.herkuHostUrl, formData)
             .subscribe(function (data) {
             console.log('Got some data from backend', data);
+            _this.spinner.hide();
+            _this.router.navigate([('/companyDetails')]);
+            _this.showSuccess();
         }, function (error) {
             console.log('Error', error);
+            _this.spinner.hide();
+            _this.showError(error);
         });
+    };
+    /*startUpload(file: File) {
+        if (file != null) {
+            console.log(file);
+            const formData = new FormData();
+            formData.append('file', file);
+
+            this.http.post('http://localhost/onboarding-backend/dist/excel-generator.php', formData)
+            .subscribe((data) => {
+                console.log('got response from server after uploading certificate', data);
+            }, (error) => {
+                console.log('There was an error', error);
+            });
+        }
+    }*/
+    ResultComponent.prototype.showSuccess = function () {
+        this.toastr.success('Form Submitted and Email Sent', 'Success');
+    };
+    ResultComponent.prototype.showError = function (msg) {
+        this.toastr.error(msg, 'Error');
     };
     return ResultComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__data_formData_model__["a" /* MyFormData */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__data_formData_model__["a" /* MyFormData */]) === "function" && _a || Object)
 ], ResultComponent.prototype, "myFormData", void 0);
 ResultComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'mt-wizard-result',
         template: __webpack_require__("../../../../../src/app/result/result.component.html")
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__data_formData_service__["a" /* FormDataService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5_ngx_spinner__["NgxSpinnerService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ngx_spinner__["NgxSpinnerService"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6_ngx_toastr__["b" /* ToastrService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6_ngx_toastr__["b" /* ToastrService */]) === "function" && _f || Object])
 ], ResultComponent);
 
-var _a, _b, _c;
+var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=result.component.js.map
 
 /***/ }),
@@ -814,7 +901,7 @@ var WorkflowGuard = (function () {
     return WorkflowGuard;
 }());
 WorkflowGuard = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__workflow_service__["a" /* WorkflowService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__workflow_service__["a" /* WorkflowService */]) === "function" && _b || Object])
 ], WorkflowGuard);
 
@@ -901,7 +988,7 @@ var WorkflowService = (function () {
     return WorkflowService;
 }());
 WorkflowService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
 ], WorkflowService);
 
 //# sourceMappingURL=workflow.service.js.map
@@ -939,7 +1026,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
